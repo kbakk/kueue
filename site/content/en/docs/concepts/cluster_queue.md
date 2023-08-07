@@ -63,7 +63,7 @@ Kueue assigns the first flavor in the ClusterQueue's `.spec.resourceGroups[*].fl
 list that has enough unused `nominalQuota` quota in the ClusterQueue or the
 ClusterQueue's [cohort](#cohort).
 
-Since `pods` resource name is [reserved](/docs/conceps/workload#reserved-resource-names) and it's value
+Since `pods` resource name is [reserved](/docs/concepts/workload#reserved-resource-names) and it's value
 is computed by Kueue in the during [admission](/docs/concepts#admission), not provided by the [batch user](/docs/tasks/#batch-user),
 it could be used by the [batch administrators](/docs/tasks#batch-administrator) to limit the number of zero or very
 small resource requesting workloads admitted at the same time.
